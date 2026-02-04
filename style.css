@@ -42,7 +42,7 @@ header {
 }
 
 header h1 {
-    font-size: clamp(2.5rem, 10vw, 5.5rem); /* Responsive sizing */
+    font-size: clamp(1.5rem, 5vw, 3.5rem); /* Responsive sizing */
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
