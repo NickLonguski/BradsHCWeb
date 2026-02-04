@@ -1,0 +1,180 @@
+/* 1. Global Reset & Box Sizing */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: Black;
+    background-color: white;
+}
+
+body::before {
+    content: "";
+    position: fixed; /* Keeps it in the background while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-image: url('BHC_logo.webp');
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%; /* Adjust this to make the logo bigger or smaller */
+    
+    
+    opacity: 0.05; /* This creates the 'faded' effect (0.1 is 10%, 0.05 is 5%) */
+    z-index: -1;   /* Places it behind all your text and images */
+    pointer-events: none; /* Ensures you can still click buttons through it */
+}
+
+/* 2. Header & Branding */
+header {
+    background-color: #fb8906;
+    color: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: clamp(2rem, 8vw, 4rem); /* Responsive sizing */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* 3. Main Content Area */
+main {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Typography Fixes */
+p {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    color: #fb8906;
+    font-size: 3rem;
+    margin: 0px 0px;
+    padding: 0px 0px;
+
+}
+
+/* 4. Images */
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+    margin: 2rem auto;
+}
+
+.rounded-image {
+    max-width: 350px;
+    border-radius: 50%;
+}
+
+/* 5. Contact Buttons (The "Call" and "Email" links) */
+.contact-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.btn {
+    background-color: #fb8906;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.2s, background-color 0.2s;
+    border: 2px solid #fb8906;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #fb8906;
+    transform: translateY(-3px);
+}
+
+/* 6. Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: white;
+    box-shadow: 0 4px 6px rgba(229, 226, 226, 0.1);
+}
+
+caption {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fb8906;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+th {
+    background-color: #eee;
+    font-weight: bold;
+    font-size: 2.25rem;
+}
+
+/* 7. Services List */
+ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    font-size: 2.25rem;
+}
+
+ul li {
+    font-size: 2.25rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+ul li::before {
+    content: "✓";
+    color: #fb8906;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 2.25rem;
+}
+
+/* 8. Footer */
+footer {
+    background-color: #333; /* Darker footer looks more modern */
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-size: 1.5rem;
+}
+
+.h2Services {
+    margin-top: 4rem;
+}
