@@ -32,7 +32,7 @@ body::before {
     background-size: 100%; /* Adjust this to make the logo bigger or smaller */
     
     
-    opacity: 0.05; /* This creates the 'faded' effect (0.1 is 10%, 0.05 is 5%) */
+    opacity: 0.14; /* This creates the 'faded' effect (0.1 is 10%, 0.05 is 5%) */
     z-index: -1;   /* Places it behind all your text and images */
     pointer-events: none; /* Ensures you can still click buttons through it */
 }
